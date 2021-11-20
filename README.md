@@ -5,7 +5,3 @@ This project is a website based on a Dublin music venue page - where there is a 
 Used W3C Validator to clean up code as best as possible. I found erros with stray </i> tags which were not needed at all.
 
 
-Homepage
-
-![Test Image 4](https://github.com/tograh/testrepository/3DTest.png 112)
-
