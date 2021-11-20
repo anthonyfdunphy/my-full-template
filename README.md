@@ -1,8 +1,6 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+MUSIC VENUE - README
 
-Welcome anthonyfdunphy,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This project is a website based on a Dublin music venue page - where there is a Homepage, an About page and a Contact page. Users will be able to load up the page, navitage to the different section in the header. When they are on a page - the menu bar will stay rounded on the corners with a shadow box around the tab which gradually faded in and out to the different shape/size ta when switching between active and unactive. Images have been added to accompany the different sections. Hover and animation style were experiemented with during the creation of this website.
 
 You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
