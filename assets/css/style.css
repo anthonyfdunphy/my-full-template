@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Playfair+Display:ital@0;1&family=Shippori+Antique+B1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: rgb(92, 177, 92);
+    background-color: blue;
+}
+
+/* headings and logo */
+
+h1, h2 {
+    font-family: Shippori Antique B1, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: rgb(92, 177, 92);
+}
+
+#logo {
+    float: left;
+    font-size: 280%;
+    margin-left: 30px;
+}
+
+/* navigation links */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    box-shadow: inset 0px 0px 40px 40px #DBA632;
+}
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+/* fade in out menu bubble corners*/
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s ease-in-out;
+}
+
+#menu a:hover {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+    transform: scale(1.1);
+}
+
+.active {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+    border-radius: 10px;
+}
+
+/* hero image and cover text */
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: rgb(185, 0, 0);
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/stage_image.jpeg') no-repeat center center;
+
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#about-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+#about-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/venue-about.jpeg') no-repeat center center;
+
+    /* animates zoom effect on loading page */
+    animation-name: about-zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+#about-section {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#about-text {
+    margin: auto;
+    width: 75%;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+}
+#about-text h2{
+    font-size: 100px;
+    transition: all 1s ease-in-out;
+    font-size:8vw
+}
+
+#about-text h2:hover{
+    transform: scale(1.05);
+}
+#contact-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+#contact-image {
+    height: 600px;
+    width: 100%;
+    padding: 100px;
+    background: url('../images/contact-img.jpeg') no-repeat center center;
+
+    /* animates zoom effect on loading page */
+    animation-name: about-zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#contact-section {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#contact-text {
+    margin: auto;
+    width: 75%;
+    height: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+#contact-text a {
+    text-decoration:none;
+    color: rgb(92, 177, 92);
+}
+
+#contact-text h2{
+    font-size:8vw;
+    transition: all 1s ease-in-out;
+}
+
+#contact-text h2:hover{
+    transform: scale(1.05);
+}
+
+
+
+/* creates the level of zoom for hero image */
+@keyframes about-zoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
+}
+
+
+
+/* venue */
+
+#spaces {
+    height: 400px;
+}
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
+
+.left-about-heading {
+    float: right;
+    width: 60%;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    float: left;
+    width: 60%;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
+
+#spaces-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 280%;
+}
+
+#circle-container {
+    width: 250px;
+    height: 250px;
+    padding: 0px;
+    border-style: none;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 15px 10px rgb(92, 177, 92);
+}
+
+/* background image for available spaces */ 
+
+#cover-circle-venue-bg {
+    background: url('../images/venue-dublin.webp') no-repeat center center;
+    height: 100%;
+    border-radius: 80%;
+}
+
+/* event times */
+
+#times {
+    background-image: url('../images/academy_img.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    width: 20%;
+    height: 150px;
+    float: left;
+    padding: 30px 0 0 10px;
+    text-align: center;
+    border: 1px solid rgb(92, 177, 92);;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#times h2 {
+    color: #fafafa;
+}
+
+/* footer */
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+.social-networks i:hover {
+    color: rgb(92, 177, 92);
+}
+
+/* gallery */
+
+#photos {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
+#photos > img {
+    width: 100%;
+}
+
+/* Media queries */
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+
+    #welcome {
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    #left-about, #right-about {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #times > div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+/* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+
+    #cover-text {
+        left: 0;
+    }
+
+    #center-about {
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 25px;
+    }
+
+    .contact-section{
+        width: inherit;
+    }
+
+    .contact-section h2 {
+        width: 100%;
+        text-align: center;
+    }
+    
+
+    .left-about-heading, .right-about-heading {
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .left-about-heading p, .right-about-heading p {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
